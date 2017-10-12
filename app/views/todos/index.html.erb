@@ -1,0 +1,17 @@
+<h1>To-Dos</h1>
+
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+  <% @todos.each do |todo| %>
+    <tr>
+      <td> <%= todo.name %> </td>
+      <td> <%= todo.description %> </td>
+    </tr>
+  <% end %>
+</table>
