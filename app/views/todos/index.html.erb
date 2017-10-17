@@ -1,6 +1,6 @@
 <h1>To-Dos</h1>
 
-<%= link_to "Create a new Todo", new_todo_path %>
+<p><%= link_to "Create a new Todo", new_todo_path %></p>
 <table>
   <tr>
     <th>Name</th>
@@ -11,9 +11,9 @@
     <tr>
       <td> <%= todo.name %> </td>
       <td> <%= todo.description %> </td>
-      <td> <%= link_to "Edit", edit_todo_path(todo) %>
-      <td> <%= link_to "Show", todo_path(todo) %>
-      <td> <%= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %>
+      <td> <%= link_to "Edit", edit_todo_path(todo) %> </td>
+      <td> <%= link_to "Show", todo_path(todo) %></td>
+      <td> <%= link_to "Delete", todo_path(todo), method: :delete, data: {confirm: "Are you sure?"} %></td>
     </tr>
   <% end %>
 </table>

@@ -1,15 +1,18 @@
+html, body {
+  background-color: #EBF2FA;
+  font-family: 'Droid Sans';
+}
+
 table {
-    font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 70%;
 }
 
 td, th {
-    border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #CBF3F0;
 }
