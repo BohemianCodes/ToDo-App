@@ -2,6 +2,13 @@ class TodosController < ApplicationController
 
   before_action :set_todo_id, only: [:edit, :show, :update, :destroy]
 
+  def index
+    @todos = Todo.all
+  end
+
+  def show
+  end
+
   def new
     @todo = Todo.new
   end
@@ -16,9 +23,6 @@ class TodosController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def edit
   end
 
@@ -29,10 +33,6 @@ class TodosController < ApplicationController
     else
       render 'edit'
     end
-  end
-
-  def index
-    @todos = Todo.all
   end
 
   def destroy
