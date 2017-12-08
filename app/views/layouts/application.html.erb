@@ -6,10 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
   </head>
 
   <body>
-    <%= render 'layouts/messages' %>
-    <%= yield %>
+    <div class="messages">
+      <%= render 'layouts/messages' %>
+    </div>
+
+    <div class="container">
+      <%= render 'layouts/title' %>
+
+      <div class="row">
+        <div class="col-xs-3 sidebar">
+          <%= render "layouts/sidebar" %>
+        </div>
+        <div class="col-xs-9 main">
+          <%= yield %>
+        </div>
+    </div>
   </body>
 </html>
