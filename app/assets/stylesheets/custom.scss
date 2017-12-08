@@ -3,6 +3,14 @@ html, body {
   font-family: 'Droid Sans';
 }
 
+h1 {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
 table {
     border-collapse: collapse;
     width: 70%;
@@ -15,4 +23,9 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #CBF3F0;
+}
+
+textarea {
+    resize: none;
+    overflow-x: hidden;
 }
